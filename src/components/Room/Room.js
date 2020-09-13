@@ -17,7 +17,7 @@ import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    maxWidth: 380,
   },
   media: {
     height: 0,
@@ -36,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     backgroundColor: red[500],
   },
+  footerStyle: {
+    padding: '20px'
+  }
 }));
 
 export default function Room({room}){
@@ -76,9 +79,7 @@ export default function Room({room}){
         <IconButton aria-label="price">
           <AttachMoneyIcon />: {room.price} 
         </IconButton>
-        <Button onClick={() => handleBook(room.bedType)} variant="contained" color="primary">
-            Book
-        </Button>
+        <Button onClick={() => handleBook(room.bedType)} variant="contained" color="primary">Book</Button>
       </CardActions>
     </Card>
   );

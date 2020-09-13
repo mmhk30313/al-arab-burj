@@ -5,7 +5,7 @@ const Home = () => {
     const style = {
         display: 'flex',
         margin: '40px',
-        justifyContent: 'space-between'
+        justifyContent: 'space-around'
     }
     const rooms = [
         {
